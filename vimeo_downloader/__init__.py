@@ -33,6 +33,7 @@ from tqdm import tqdm
 
 headers = {
     "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0",
+    "referer":"https://cursos.luiztools.com.br"
 }
 config = "https://player.vimeo.com/video/{}/config"
 details = "http://vimeo.com/api/v2/video/{}.json"
