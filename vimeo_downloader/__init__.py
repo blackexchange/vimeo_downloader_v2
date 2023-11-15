@@ -175,10 +175,12 @@ class Vimeo:
         self,
         url: str,
         embedded_on: Optional[str] = None,
-        cookies: Optional[str] = None,
+        cookies: Optional[str] = None
        
     ):
-       print(headers);
+        raise RequestError(
+                        headers
+                    )
         self._url = (
             urlparse(url)._replace(query=None).geturl()
         )  # URL for the vimeo video
