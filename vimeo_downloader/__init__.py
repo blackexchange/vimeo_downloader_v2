@@ -176,7 +176,9 @@ class Vimeo:
         url: str,
         embedded_on: Optional[str] = None,
         cookies: Optional[str] = None,
+       
     ):
+       print(headers);
         self._url = (
             urlparse(url)._replace(query=None).geturl()
         )  # URL for the vimeo video
