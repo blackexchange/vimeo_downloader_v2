@@ -178,9 +178,7 @@ class Vimeo:
         cookies: Optional[str] = None
        
     ):
-        raise RequestError(
-                        headers
-                    )
+
         self._url = (
             urlparse(url)._replace(query=None).geturl()
         )  # URL for the vimeo video
